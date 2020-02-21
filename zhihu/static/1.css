@@ -1,0 +1,36 @@
+*{margin:0;padding:0;background-repeat:no-repeat;background-attachment:fixed}
+body{background-image:url(img/sign_bg.png);background-size:cover;background-color:#b8e5f8}
+.SignHeader{text-align:center}
+.signFlow-tabs{background-color:#fff;width:400px;height:250px;margin:0 auto;border-radius:5px;margin-top:30px}
+.F1,.F2{float:left;width:100px;height:30px;font-size:17px;margin:10px;font-weight:100;background-color:#fff;border:none}
+.dd{height:50px;width:400px}
+.tab1{width:400px;height:30px;margin-top:20px}
+.num{margin:auto 0 auto 45px;float:left;height:45px;width:110px}
+.telnum{float:right;height:45px;width:245px;text-align:left}
+.DL{width:400px;height:42px;text-align:center;margin:0 auto;text-align:center}
+span{margin-left:10px;line-height:42px}
+.download{background-color:#fff;color:#0084ff;font-family:"黑体";font-size:15px;width:400px;height:42px;cursor:pointer;border-radius:5px}
+.mess{width:450px;height:60px;}
+.message{margin:auto 43px;border:0 solid #ebebeb;border-bottom:1px solid #ebebeb;float:left}
+.getmess{margin:auto 65px auto auto;border:0 solid #ebebeb;border-bottom:1px solid #ebebeb;float:right;font-size:14px}
+.voice{float:right;margin:20px 65px 30px auto;font-size:14px}
+.register,.register1,.login,.login1{margin-top: 50px;width:100px;height:40px;font-size:15px;background-color:#0084ff;color:#fff;cursor:pointer;border-radius:5px;margin-left:28px}
+.register{margin-left: 50px;}
+.register1{margin-top:50px;margin-left: 50px;}
+.mail{margin:auto 43px;border:0 solid #ebebeb;border-bottom:1px solid #ebebeb}
+.passcode{margin:auto 43px;border:0 solid #ebebeb;border-bottom:1px solid #ebebeb}
+.forget{text-align:right;width:400px}
+.zhuce{margin:0 auto;font-size:14px;background-color:#f6f6f6;width:400px;height:50px;border-radius:5px}
+.xieyi{float:left;color:#8590a6}
+.jigouhao{float:right;margin:15px 15px auto auto;color:#175199}
+.else{margin:20px auto;background-color:#fff;width:370px;height:60px;line-height:60px;color:#9a9ca0;border-radius:5px;padding-left:15px;padding-right:15px}
+.else1{float:right}
+.download a:active,.download a:hover,.download a:visited,.getmess a:active,.getmess a:hover,.getmess a:link,.getmess a:visited,.jigouhao a:active,.jigouhao a:hover .download a:link,.jigouhao a:link,.jigouhao a:visited{text-decoration:none;color:#175199}
+.else1 a:active,.else1 a:hover,.else1 a:link,.else1 a:visited,.voice a:active,.voice a:hover,.voice a:link,.voice a:visited,.xieyi a:active,.xieyi a:hover,.xieyi a:link,.xieyi a:visited{text-decoration:none;color:#8590a6}
+.foot{font-size:12px;font-family:"黑体";color:#fff;margin:auto;width:700px;height:60px}
+.font a:active,.font a:hover,.foot a:link,.foot a:visited{color:#fff;text-decoration:none}
+.one{margin:50px auto 5px auto}
+.three,.two{margin:5px auto}
+input{border:0;border-bottom:1px solid #ebebeb;padding:10px 0 0 0}
+.message input{width:200px}
+.telnum input{width:200px}

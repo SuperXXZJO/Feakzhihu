@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>知乎 - 发现更大的世界</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../static/img/t.png">
+	<link rel="stylesheet" href="../static/1.css" type="text/css">
+	<script src="../static/1.js"></script>
+	<script src="../static/ajax.js"></script>
+</head>
+
+<body>
+	<div class="SignHeader">
+		<img src="../static/img/logo.png" style="width:9%;height: 9%;">
+	</div>
+	<div class="signFlow-tabs">
+		<button onclick="myFunction()" class="F1">免密码登录</button>
+		<button onclick="myF()" class="F2">密码登录</button>
+		<div class="dd"></div>
+		<div id="tab1" >
+			<div class="num"><select>
+					<option>中国 +86</option>
+					<option>美国 +1</option>
+					<option>英国 +44</option>
+					<option>新加坡 +65</option>
+					<option>其他...</option>
+					<option>其他...</option>
+					<option>其他...</option>
+					<option>其他...</option>
+					<option>其他...</option>
+					<option>其他...</option>
+					<option>其他...</option>
+					<option>其他...</option>
+					<option>其他...</option>
+					<option>其他...</option>
+					<option>其他...</option>
+					<option>其他...</option>
+					<option>其他...</option>
+					<option>其他...</option>
+					<option>其他...</option>
+					<option>其他...</option>
+					<option>其他...</option>
+					<option>其他...</option>
+					<option>其他...</option>
+				</select></div>
+			<div class="telnum"><input type="text" name="telepN" placeholder="手机号" /></div>
+		
+		<div class="mess">
+			<div class="message"><input type="text" name="verificationC" placeholder="请输入6位短信验证码" /></div>
+			<div class="getmess"><a href="#">获取短信验证码</a></div>
+			<div class="voice"><a href="#">接收语音验证码</a></div>
+
+			<button class="register" type="submit">注册</button>
+			<button class="login" type="submit">登录</button>
+		</div>
+		</div>
+			<div id="tab2" style="display:none" >
+				<div class="mail"><input type="text" name="teleNE" placeholder="手机号或邮箱" /></div>
+				<div class="passcode"><input type="password" name="passcode" placeholder="密码" /></div>
+				<div class="forget"><a href="https://www.zhihu.com/account/password_reset" target="_blank">忘记密码？</a>
+				</div>
+				 <button class="register1" type="submit"  >注册</button>
+				 <button class="login1" type="submit">登录</button>
+			</div>
+		
+		</div>
+		<div class="zhuce">
+			<div class="xieyi">未注册手机验证后自动登录 <br>注册即代表同意<a href="https://www.zhihu.com/terms">《知乎协议》</a><a
+					href="https://www.zhihu.com/term/privacy">《隐私保护指引》</a></div>
+			<div class="jigouhao"><a href="https://www.zhihu.com/org/signup">注册机构号</a></div>
+		</div>
+		<div class="else">
+			社交账号登录
+			<div class="else1">
+			<a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx268fcfe924dcb171&redirect_uri=https%3A%2F%2Fwww.zhihu.com%2Foauth%2Fcallback%2Fwechat%3Faction%3Dlogin%26from%3D&response_type=code&scope=snsapi_login&state=3536704b70523061546f6678367834425444364b7a35577550584c5561574334#wechat" target="_blank"><img src="../static/img/wx.png" >微信</a>
+			<a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&scope=get_user_info%2Cget_info%2Cadd_t%2Cadd_pic_t%2Cget_other_info%2Cget_fanslist%2Cget_idollist%2Cadd_idol%2Cadd_share&state=3536704b70523061546f6678367834425444364b7a35577550584c5561574334&redirect_uri=https%3A%2F%2Fwww.zhihu.com%2Foauth%2Fcallback%2Fqqconn%3Faction%3Dlogin%26from%3D&response_type=code&client_id=100490701" target="_blank"><img src="../static/img/qq.png" >QQ</a>
+			<a href="https://api.weibo.com/oauth2/authorize?scope=email&state=3536704b70523061546f6678367834425444364b7a35577550584c5561574334&redirect_uri=http%3A%2F%2Fwww.zhihu.com%2Foauth%2Fcallback%2Fsina&response_type=code&client_id=3063806388" target="_blank"><img src="../static/img/wb.png" >微博</a>
+		</div>
+	</div>
+	<div class="DL">
+	<button class="download">
+		<a href="https://www.zhihu.com/app/"><img src="../static/img/zh.png" style="width: auto;height: 50%;"><span>下载知乎 App</span></a>
+	</button></div>
+	<div class="foot">
+		<div class="one">
+			<a href="https://zhuanlan.zhihu.com" target="_blank">知乎专栏·</a>
+			<a href="https://www.zhihu.com/roundtable" target="_blank">圆桌·</a>
+			<a href="https://www.zhihu.com/explore" target="_blank">发现·</a>
+			<a href="https://www.zhihu.com/app" target="_blank">移动应用·</a>
+			<a href="https://www.zhihu.com/contact" target="_blank">联系我们·</a>
+			<a href="https://app.mokahr.com/apply/zhihu" target="_blank">来知乎工作·</a>
+			<a href="https://www.zhihu.com/org/signup" target="_blank">注册机构号</a>
+		</div>
+		<div class="two">
+			&copy; 2020 知乎·
+			<a href="https://tsm.miit.gov.cn/dxxzsp/" target="_blank">京 ICP 证 110745 号·</a>
+			<a href="http://www.beian.miit.gov.cn" target="_blank">京 ICP 备 13052560 号 — 1·</a>
+			<a href="http://www.beian.miit.gov.cnhttp://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020088" target="_blank"><img src="../static/img/an.png">京公网安备 11010802010035 号·</a>
+			<a href="https://zhstatic.zhihu.com/assets/zhihu/publish-license.jpg" target="_blank">出版物经营许可证</a>
+		</div>
+		<div class="three">
+			<a href="https://zhuanlan.zhihu.com/p/51068775" target="_blank">侵权举报·</a>
+			<a href="http://www.12377.cn" target="_blank">网上有害信息举报专区·</a>
+			<a href="https://www.zhihu.com/jubao" target="_blank">儿童色情信息举报专区·</a>
+			违法和不良信息举报：010-82716601
+		</div>
+	</div>
+
+</body>
+
+</html>

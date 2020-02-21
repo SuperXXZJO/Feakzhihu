@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/4.css" type="text/css">
+    <script src="../static/4.js"></script>
+</head>
+
+<body>
+    
+    <div class="normal" >
+        <div class="head1">
+            <ul class="mo">
+                <img src="../static/img/logo.png" style="width: 5%;height: 75%;margin-top: 5px">
+                <li class="mo1"><a href="https://www.zhihu.com/" class="h1">首页</a></li>
+                <li class="mo1"><a href="https://www.zhihu.com/explore" class="h1">发现</a></li>
+                <li class="mo1"><a href="https://www.zhihu.com/question/waiting" class="h1">等你来答</a></li>
+
+                <input type="text">
+                <button class="sch">提问</button>
+            </ul>
+        </div>
+
+        <div class="head2" style="display: none">
+            <ul class="mo">
+                <li class="mo1"><a href="" class="h1">动态</a></li>
+                <li class="mo1"><a href="" class="h1">回答</a></li>
+                <li class="mo1"><a href="" class="h1">提问</a></li>
+                <li class="mo1"><a href="" class="h1">文章</a></li>
+                <li class="mo1"><a href="" class="h1">专栏</a></li>
+                <li class="mo1"><a href="" class="h1">想法</a></li>
+                <li class="mo1"><a href="" class="h1">更多</a></li>
+                <button class="u2"> 编辑个人资料</button>
+            </ul>
+        </div>
+        <div class="bg">
+           <img src="../static/img/tx.jpg" style="margin-top: 80px;width: 150px;height:auto;float: left;">
+            <button class="uu2" onclick="selfMShow()"> 编辑个人资料</button>
+        </div>
+        <div class="left">
+            <div class="l1">
+                <ul class="mo">
+                    <li class="mo1" onclick="show1()">动态</li>
+                    <li class="mo1" onclick="show2()">回答</li>
+                    <li class="mo1" onclick="show3()">提问</li>
+                    <li class="mo1" onclick="show4()">文章</li>
+                    <li class="mo1" onclick="show5()">专栏</li>
+                    <li class="mo1" onclick="show6()">想法</li>
+                    <li class="mo1" onclick="show7()">更多&#9660;</li>
+
+                </ul>
+            </div>
+            <hr>
+            <div class="ld2">我的动态</div>
+
+            <div class="ld3"></div>
+
+            <div class="lh2" style="display: none;">我的回答</div>
+
+            <div class="lh3" style="display: none;"></div>
+            <div class="lt2" style="display: none;">我的提问</div>
+
+            <div class="lt3" style="display: none;"></div>
+            <div class="lw2" style="display: none;">我的文章</div>
+
+            <div class="lw3" style="display: none;"></div>
+            <div class="lz2" style="display: none;">我的专栏</div>
+
+            <div class="lz3" style="display: none;"></div>
+            <div class="lx2" style="display: none;">我的想法</div>
+
+            <div class="lx3" style="display: none;"></div>
+            <div class="lg2" style="display: none;">
+                <ul class="foll">
+                    <li class="wfol" >我关注的人</li>
+                    <li class="folw" >关注我的人</li>
+                    <li class="zl" >我关注的专栏</li>
+                    <li class="topic" >我关注的话题</li>
+                    <li class="folQ" >我关注的问题</li>
+                    <li class="sc">我关注的收藏</li>
+                </ul>
+                <div class="folQD" style="display: none;">
+
+                </div>
+               
+            </div>
+          
+        </div>
+        <div class="right">
+            <div class="r1">
+                <a href="https://www.zhihu.com/creator" class="cz"><img src="../static/img/czz.png">创作者中心 <span
+                        class="ct">去开通</span>&#62;</a>
+            </div>
+            <div class="r2">
+                <a href="" target="_blank" class="ft">
+                    <div class="ft1">关注了</div>
+                </a>
+                <a href="" target="_blank" class="ft">
+                    <div class="ft1">关注者</div>
+                </a>
+            </div>
+            <div class="r3">
+                <div class="fc" onclick="show7()"><a  class="de1">关注的话题</a></div>
+                <div class="fc" onclick="show7()"><a class="de1">关注的专栏</a></div>
+                <div class="fc" onclick="show7()"><a class="de1">关注的问题</a></div>
+                <div class="fc" onclick="show7()"><a  class="de1">关注的收藏夹</a></div>
+                <div class="fc1">个人主页被浏览次</div>
+
+
+            </div>
+            <div class="r4">
+                <a href="https://liukanshan.zhihu.com/" target="_blank" class="ls">刘看山·</a>
+                <a href="https://www.zhihu.com/question/19581624" target="_blank" class="ls">知乎指南·</a>
+                <a href="https://www.zhihu.com/terms" target="_blank" class="ls">知乎协议·</a><br>
+                <a href="https://www.zhihu.com/term/privacy" target="_blank" class="ls">知乎隐私保护指引</a><br>
+                <a href="https://www.zhihu.com/app/" target="_blank" class="ls">应用·</a>
+                <a href="https://app.mokahr.com/apply/zhihu/3819#/?_k=j185p5" target="_blank" class="ls">工作·</a>
+                <a href="" target="_blank" class="ls">申请开通知乎机构号</a><br>
+                <a href="https://zhuanlan.zhihu.com/p/51068775" target="_blank" class="ls">侵权举报·</a>
+                <a href="http://www.12377.cn/" target="_blank" class="ls">网上有害信息举报专区</a><br>
+                <a href="https://tsm.miit.gov.cn/dxxzsp/" target="_blank" class="ls">京 ICP 证 110745 号·</a><br>
+                <a href="http://www.beian.miit.gov.cn" target="_blank" class="ls">京 ICP 备 13052560 号 — 1·</a><br>
+                <a href="http://www.beian.miit.gov.cnhttp://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020088"
+                    target="_blank" class="ls"><img src="../static/img/an.png">京公网安备 11010802010035 号·</a><br>
+                互联网药品信息服务资格证书<br>
+                （京） — 给经营性 — 2017 — 0067 <br>
+                违法和不良信息举报： 010-82716601<br>
+                <a href="https://www.zhihu.com/jubao" target="_blank" class="ls">儿童色情信息举报专区</a>
+                <a href="https://www.zhihu.com/certificates" target="_blank" class="ls">证件中心</a><br>
+                <a href="https://www.zhihu.com/contact" target="_blank" class="ls">联系我们</a> &copy; 2020 知乎
+            </div>
+        </div>
+    </div>
+    <div class="selfM" style="display: none;">
+        <div id="pic">
+            <div class="back"><span>📷</span><br>修改我的头像</div>
+        </div>
+        <button class="backnom" onclick="normalShow()">返回我的主页</button>
+        <div class="mes"  > 
+            <h1>昵称</h1>
+            <div class="gd" >性别<button class="bt1"  onclick="gdsctShow()">&#9998;填写</button></div>
+              <div class="gdsct" style="display: none;"><input type="radio" name="gender" value="1" />男
+
+                <input type="radio" name="gender" value="2" />女<br>
+                <button class="rev" onclick="gdShow()">保存</button><button class="canc" onclick="gdShow()">取消</button></div>
+
+                <hr>
+                <div class="int">一句话介绍<button class="bt1">&#9998;填写</button></div>
+                <hr>
+                <div class="adr">居住地<button class="bt2">&#10010;添加居住地</button></div>
+                <hr>
+                <div class="job">所在行业<button class="bt1">&#9998;填写</button></div>
+                <hr>
+                <div class="jex">职业经历<button class="bt2">&#10010;添加职业经历</button></div>
+                <hr>
+                <div class="exc">教育经历<button class="bt2">&#10010;添加教育经历</button></div>
+                <hr>
+                <div class="srz">个人认证<button class="bt3">申请个人认证&#155;</button></div>
+                <hr>
+                <div class="res">所在行业<button class="bt1">&#9998;填写</button></div>
+                <hr>
+            </div>
+        
+</body>
+
+</html>

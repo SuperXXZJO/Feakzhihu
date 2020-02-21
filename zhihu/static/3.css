@@ -1,0 +1,85 @@
+*{margin:0;padding:0}
+body{background-color:#f6f6f6;}
+.head1{height:60px;background-color:#fff;text-align:center;line-height:52px;width: 100%;position: fixed;box-shadow: 0 1px 10px #d3cfcf;z-index: 10;}
+.head2{height:60px;background-color:#fff;text-align:center;line-height:52px;width: 100%;position: fixed;box-shadow: 0 1px 10px #d3cfcf;z-index: 10;}
+.u1{background-color:#0084ff;margin-left: 600px;font-size: 15px;width:96px;height:35px;color:#fff;border-radius:3px;border:none}
+.u2{width:96px;height:35px;background-color: white;font-size: 15px;border-radius:3px;border:1px solid #0084ff;color: #0084ff;margin-left: 15px;}
+.mo{height:60px;width:100%;list-style-type:none}
+.mo1{display:inline;margin:20px;line-height: 60px;}
+a.h1:link,a.h1:visited{text-decoration:none;color:#9cadbb;font-size:20px;font-weight:lighter}
+a.h1:active,a.h1:hover{text-decoration:none;color:#818181;font-size:20px;font-weight:lighter}
+input{outline-style:none;border:1px solid grey;border-radius:3px;padding:4px 8px;width:220px;font-size:15px}
+.sch{background-color:#0084ff;width:50px;height:30px;color:#fff;border-radius:3px;border:none}
+.gopersonalP{background-color:#0084ff;width:100px;height:30px;color:#fff;border-radius:3px;border:none;margin-left: 50px;}
+.img{margin-bottom:5px;margin-top:13px;}
+.blank{height: 60px;}
+.qut{width: 100%;height: 150px;background-color: white;}
+h1{margin-left: 250px;}
+.cont{width: 1200px;}
+.HitsP{text-align: center;float: right;width:100px;height: 50px;background-color: white;color:#8590a6;line-height: 25px;}
+.Hits{color: black;font-size: 25px;}
+.share{width:110px;margin-left: 650px;box-shadow: 0 1px 10px #d3cfcf;text-align: center;z-index: 10;}
+.sre1{height: 50px;line-height: 40px;background-color: white;font-weight: lighter;color: #a1a1b5;}
+.more{width:100px;margin-left: 750px;box-shadow: 0 1px 10px #d3cfcf;text-align: center;}
+.more1{height: 50px;line-height: 40px;background-color: white;font-weight: lighter;color: #a1a1b5;}
+.q1,.q2,.q3{margin-top: 60px;cursor: pointer;}
+.q1{background-color:#0084ff;margin-left: 250px;font-size: 15px;width:96px;height:35px;color:#fff;border-radius:3px;border:none}
+.q2{width:96px;height:35px;background-color: white;font-size: 15px;border-radius:3px;border:1px solid #0084ff;color: #0084ff;margin-left: 15px;}
+.q3{width:96px;height:35px;background-color: white;font-size: 15px;border-radius:3px;border:1px solid #8590a6;color:#8590a6;margin-left: 15px;margin-right: 10px;}
+.q4{color:#8590a6;margin-right: 10px;cursor: pointer;}
+.left{width:694px;margin-left:250px;}
+.l1{margin-top:10px;background-color:white;width: 694px;height: 50px;color: #9099ad;box-shadow: 0 1px 10px #d3cfcf;text-align: center;line-height: 50px;}
+.l2{width: 694px;margin-top: 20px;;}
+.l3{height: 325px;margin-top: 10px;box-shadow: 0 1px 10px #d3cfcf}
+
+.myP{height: 50px;background-color: white;line-height: 50px;}
+hr {
+    height: 1px;
+    background-color:#8590a6;
+    border: none;
+  }
+  .editButtons{height: 40px;background-color: white;}
+.editor{height: 180px;background-color: white;}
+.sbt{height: 50px;background-color: white;}
+.sbtb{background-color:#0084ff;margin-left: 550px;font-size: 15px;width:96px;height:35px;color:#fff;border-radius:3px;border:none;margin-top: 10px;cursor: pointer;}
+.right{width:296px;}
+.r1{height: 260px;position: absolute;top:220px;left:952px;width:296px;background-color:#fff;box-shadow: 0 1px 10px #d3cfcf;color: black;}
+
+.wt,.ct{height: 90px;background-color:white;box-shadow: 0 1px 10px #d3cfcf;line-height: 90px;}
+.wt1,.ct1,.rt1,.rcm1{height: 50px;line-height: 50px;font-weight: lighter;box-shadow: 0 1px 10px #d3cfcf}
+.ft1{width:98px;float:left;text-align:center;}
+.wtm{height: 70px;}
+.wtb1{margin-left: 15px;margin-right: 15px;width:120px;height: 35px;color: white;background-color:#0084ff;font-size: 15px;border-radius:3px;}
+.wtb2{width:120px;height: 35px;background-color: white;font-size: 15px;border-radius:3px;border:1px solid #8590a6;color:#8590a6;}
+.r2{width:296px;height:340px;background-color:#fff;position: absolute;top:490px;left:952px;line-height:35px;box-shadow: 0 1px 10px #d3cfcf}
+.r3{width:296px;background-color:#fff;position: absolute;top:1000px;left:952px;box-shadow: 0 1px 10px #d3cfcf;height:250px}
+.r4{width:296px;background-color:#fff;position: absolute;top:1260px;left:952px;box-shadow: 0 1px 10px #d3cfcf}
+.rcm{height: 70px;box-shadow: 0 1px 10px #d3cfcf;background-color: white;}
+.r5{width: 296px;position: absolute;top:1530px;left: 952px;color: #a1a1b5;font-size: 14px;font-weight:lighter}
+a.ls:link,a.ls:visited{text-decoration:none;color:#a1a1b5;font-size:12px;font-weight:lighter}
+a.ls:active,a.ls:hover{text-decoration:none;color:#6d75a1;font-size:12px;font-weight:lighter}
+a.ft:link,a.ft:visited{text-decoration:none;color:#a1a1b5;font-size:15px;font-weight:lighter}
+a.ft:active,a.ft:hover{text-decoration:none;color:#6d75a1;font-size:15px;font-weight:lighter}
+a.t1:link,a.t1:visited{text-decoration:none;color:white;font-size:15px;font-weight:lighter;}
+a.t1:active,a.t1:hover{text-decoration:none;color:white;font-size:15px;font-weight:lighter;}
+
+.editButtons span{
+    display:inline-block;
+    white-space:nowrap;
+}
+.editButtons button{font-size: 15px;width: 30px;height: 40px;;border: none;background-color: white;padding: 2px;color: #8590a6;}
+.t1{width: 674px;background-color: white;padding: 10px;}
+.wid{height: 40px;background-color: white;box-shadow: 0 1px 10px #d3cfcf;line-height: 40px;}
+.ag{background-color: #e5f2ff;width: 100px;height: 30px;color: #1c8dff;border-radius:3px;border:none}
+.di{background-color: #e5f2ff;width: 40px;height: 30px;color: #1c8dff;border-radius:3px;border:none}
+
+.fc1{color:#8590a6;margin-right: 10px;cursor: pointer;}
+.sim{height: 120px;}
+.comment{width: 660px;padding: 20px;margin-top: 20px;}
+.com1{width: 620px;height: 15px;background-color: white;z-index: 10px;font-weight: lighter;line-height: 15px;padding: 20px;box-shadow: 0 1px 10px #d3cfcf;}
+.com2,.com3{width: 620px;height: 10px;background-color: #f6f6f6;z-index: 10px;font-weight: lighter;line-height: 10px;padding: 20px;box-shadow: 0 1px 10px #d3cfcf;}
+.comd1{height: 100px;box-shadow: 0 1px 10px #d3cfcf;}
+.shareE{margin-top: 20px;width:110px;margin-left: 200px;box-shadow: 0 1px 10px #d3cfcf;text-align: center;}
+.sreE1{height: 50px;line-height: 40px;background-color: white;font-weight: lighter;color: #a1a1b5;}
+.moreE{margin-top: 20px;width:100px;margin-left: 400px;box-shadow: 0 1px 10px #d3cfcf;text-align: center;}
+.moreE1{height: 50px;line-height: 40px;background-color: white;font-weight: lighter;color: #a1a1b5;}

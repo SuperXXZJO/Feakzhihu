@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页 - 知乎</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../static/img/t.png">
+    <link rel="stylesheet" href="../static/2.css" type="text/css">
+    <script src="../static/2.js"></script>
+</head>
+
+<body>
+
+    <div class="head1">
+        <ul class="mo">
+            <img src="../static/img/logo.png" style="width: 5%;height: 75%;margin-top: 5px">
+            <li class="mo1"><a href="https://www.zhihu.com/" class="h1">首页</a></li>
+            <li class="mo1"><a href="https://www.zhihu.com/explore" class="h1">发现</a></li>
+            <li class="mo1"><a href="https://www.zhihu.com/question/waiting" class="h1">等你来答</a></li>
+
+            <input type="text">
+            <button class="sch" onclick="showQ()" >提问</button>
+            <button class="gopersonalP" onclick="gopersonalP()">个人主页</button>
+        </ul>
+        
+    </div>
+    
+    <div class="head2" style="display: none;">
+        <ul class="mo">
+            <img src="../static/img/logo.png" style="width: 5%;height: 75%;margin-top: 5px">
+            <li class="mo1"><a href="https://www.zhihu.com/" class="h2">推荐</a></li>
+            <li class="mo1"><a href="https://www.zhihu.com/follow" class="h2">关注</a></li >
+            <li class="mo1"><a href="https://www.zhihu.com/question/waiting" class="h2">热榜</a></li>
+            <input type="text" class="hb">
+            <button class="sch" onclick="showQ()">提问</button>
+            <button class="gopersonalP" onclick="gopersonalP()">个人主页</button>
+        </ul>
+    </div>
+
+    <div class="left">
+        <div class="pop" style="display: none;" ><div class="ediA" contenteditable="true">输入问题</div>
+        <button class="canQ" onclick="hiddenQ()">取消</button>
+        <button class="subQ">提交问题</button>
+        
+    </div>
+        <div class="sh">
+            <div class="img"><img src="../static/img/2020.png" style="width:694px;height: 94.6px;"></div>
+
+            <ul class="mo">
+                <li class="mo1" onclick="select1()"> 推荐</li>
+                <li class="mo1" onclick="select2()">关注</li>
+                <li class="mo1" onclick="select3()">热榜</li>
+            </ul>
+            <hr>
+        </div>
+    </div>
+    <div class="p2">
+        <div class="rec">
+            <div class="t1">
+                <a class="indexQ"  href="" name="question">question</a>
+                <p>
+                  content
+                </p>
+                <button class="ag" onclick="changeBC(this)" name="Likecount"><span>赞同</span>&#9650;</button>
+                <button class="di" onclick="changeBc(this)" name="Dislikecount"><span></span>&#9660;</button>
+                <span class="fc1" onmousemove="changeC(this)" onmouseout="normalC(this)" onclick="changeW(this)"><img
+                        src="../static/img/pl.png">评论</span>
+                <span class="fc1" onmousemove="changeC(this)" onmouseout="normalC(this) " onclick="shareM()"><img
+                        src="../static/img/fx.png">分享</span>
+                <span class="fc1" onmousemove="changeC(this)" onmouseout="normalC(this)"><img
+                        src="../static/img/sc.png">收藏</span>
+                <span class="fc1" onmousemove="changeC(this)" onmouseout="normalC(this)" onclick="cancelL(this)"><img
+                        src="../static/img/xh.png">喜欢</span>
+                <img src="../static/img/gd.png" onclick="moreM()" style="cursor: pointer;" class="lm">
+
+                <div class="comment" style="display: none;">
+                    <div class="com1">评论</div>
+                    <div class="com2">精选评论(5)</div>
+                    <div class="comd1"></div>
+                    <div class="comd1"></div>
+                    <div class="comd1"></div>
+                    <div class="comd1"></div>
+                    <div class="comd1"></div>
+                    <div class="com3">评论</div>
+                    <div class="comd1"></div>
+                    <div class="comd1"></div>
+                    <div class="comd1"></div>
+                </div>
+                <div class="share" style="display: none;">
+                    <div class="sre1" onmousemove="shareBc(this)" onmouseout="shareN(this)">复制链接</div>
+                    <div class="sre1" onmousemove="shareBc(this)" onmouseout="shareN(this)">新浪微博</div>
+                    <div class="sre1" onmousemove="shareBc(this)" onmouseout="shareN(this)">微信扫一扫</div>
+                </div>
+                <div class="more" style="display: none;">
+                    <div class="more1" onmousemove="shareBc(this)" onmouseout="shareN(this)">没有帮助</div>
+                    <div class="more1" onmousemove="shareBc(this)" onmouseout="shareN(this)">举报</div>
+                </div>
+            </div>
+        </div>
+        <div class="flo" style="display: none;">
+            <div class="po1">
+                <div class="cont"></div>
+                <div class="funtmo">
+                <button class="fcq" onclick="fol(this)">关注问题</button>
+                <span class="fc1" onmousemove="changeC(this)" onmouseout="normalC(this)" onclick="changeW(this)"><img
+                        src="../static/img/pl.png">评论</span>
+                <span class="fc1" onmousemove="changeC(this)" onmouseout="normalC(this) " onclick="shareM()"><img
+                        src="../static/img/fx.png">分享</span></div>
+            </div>
+            <div class="po1"></div>
+            <div class="po1"></div>
+        </div>
+        <div class="hot" style="display: none;">
+            <div class="tz">
+            <div class="hotl">1</div>
+            <h2>biaoti</h2>
+            <div class="oc">
+            <span class="fc1"><img src="../static/img/rd.png">热度</span>
+            <span class="fc1" onmousemove="changeC(this)" onmouseout="normalC(this) " onclick="shareM()"><img
+                    src="../static/img/fx.png">分享</span></div>
+        </div>
+        
+    </div>
+    </div>
+    </div>
+    <div class="right">
+        <div class="r1">
+            <a href="https://www.zhihu.com/question" target="_blank" class="ft">
+                <div class="ft1"><img src="../static/img/hd.png" style="width: 25%;height: 25%;margin-top: 5px"><br>写回答
+                </div>
+            </a>
+            <a href="https://zhuanlan.zhihu.com/write" target="_blank" class="ft">
+                <div class="ft1"><img src="../static/img/wz.png" style="width: 25%;height: 25%;margin-top: 5px"><br>写文章
+                </div>
+            </a>
+            <a href="" target="_blank">
+                <div class="ft1"><img src="../static/img/xf.png" style="width: 25%;height: 25%;margin-top: 5px"><br>写想法
+                </div>
+            </a>
+            <a href="" target="_blank">
+                <div class="ft2"><img src="../static/img/sp.png" style="width: 25%;height: 25%;margin-top: 5px"><br>发视频
+                </div>
+            </a>
+            <a href="https://www.zhihu.com/question/later" target="_blank" class="ft">
+                <div class="ft2"><img src="../static/img/sh.png" style="width: 25%;height: 25%;margin-top: 5px"><br>稍后答
+                </div>
+            </a>
+            <a href="https://www.zhihu.com/draft" target="_blank" class="ft">
+                <div class="ft2"><img src="../static/img/cg.png" style="width: 25%;height: 25%;margin-top: 5px"><br>草稿箱
+                </div>
+            </a>
+        </div>
+        <div class="r2">
+            <a href="https://www.zhihu.com/creator" class="cz"><img src="../static/img/cz.png"
+                    style="width: 8%;height: 50%;margin-top:1px">创作者中心 <span class="ct">去开通</span>&#62;</a>
+        </div>
+        <div class="r3">
+            <a href="https://www.zhihu.com/lives" target="_blank" class="es1">
+                <div class="qt1"><img src="../static/img/live.png"
+                        style="width: 25%;height: 25%;margin-top: 5px"><br>Live</div>
+            </a>
+            <a href="https://www.zhihu.com/pub/" target="_blank" class="es2">
+                <div class="qt1"><img src="../static/img/sd.png" style="width: 25%;height: 25%;margin-top: 5px"><br>书店
+                </div>
+            </a>
+            <a href="https://www.zhihu.com/roundtable" target="_blank" class="es3">
+                <div class="qt1"><img src="../static/img/yz.png" style="width: 25%;height: 25%;margin-top: 5px"><br>圆桌
+                </div>
+            </a>
+            <a href="https://zhuanlan.zhihu.com/" target="_blank" class="es3">
+                <div class="qt2"><img src="../static/img/zl.png" style="width: 25%;height: 25%;margin-top: 5px"><br>专栏
+                </div>
+            </a>
+            <a href="https://www.zhihu.com/consult" target="_blank" class="es4">
+                <div class="qt2"><img src="../static/img/ff.png" style="width: 25%;height: 25%;margin-top: 5px"><br>付费咨询
+                </div>
+            </a>
+            <a href="https://www.zhihu.com/wiki" target="_blank" class="es4">
+                <div class="qt2"><img src="../static/img/bk.png" style="width: 25%;height: 25%;margin-top: 5px"><br>百科
+                </div>
+            </a>
+        </div>
+        <div class="r4">
+            <ul class="de">
+                <li><a href="#home" class="de1"><img src="../static/img/sc.png"
+                            style="width:7%;height: auto;margin-left: 10px;margin-right: 5px;">我的收藏</a></li>
+                <li><a href="#news" class="de1"><img src="../static/img/wt.png"
+                            style="width:7%;height: auto;margin-left: 10px;margin-right: 5px;">我关注的问题</a></li>
+                <li><a href="#contact" class="de1"><img src="../static/img/yq.png"
+                            style="width:7%;height: auto;margin-left: 10px;margin-right: 5px;">我的邀请</a></li>
+                <li><a href="#about" class="de1"><img src="../static/img/ye.png"
+                            style="width:7%;height: auto;margin-left: 10px;margin-right: 5px;">我的余额</a></li>
+                <li><a href="#about" class="de1"><img src="../static/img/zw.png"
+                            style="width:7%;height: auto;margin-left: 10px;margin-right: 5px;">站务中心</a></li>
+                <li><a href="#about" class="de1"><img src="../static/img/zx.png"
+                            style="width:7%;height: auto;margin-left: 10px;margin-right: 5px;">版权服务中心</a></li>
+            </ul>
+        </div>
+        <div class="r5">
+            <a href="https://liukanshan.zhihu.com/" target="_blank" class="ls">刘看山·</a>
+            <a href="https://www.zhihu.com/question/19581624" target="_blank" class="ls">知乎指南·</a>
+            <a href="https://www.zhihu.com/terms" target="_blank" class="ls">知乎协议·</a><br>
+            <a href="https://www.zhihu.com/term/privacy" target="_blank" class="ls">知乎隐私保护指引</a><br>
+            <a href="https://www.zhihu.com/app/" target="_blank" class="ls">应用·</a>
+            <a href="https://app.mokahr.com/apply/zhihu/3819#/?_k=j185p5" target="_blank" class="ls">工作·</a>
+            <a href="" target="_blank" class="ls">申请开通知乎机构号</a><br>
+            <a href="https://zhuanlan.zhihu.com/p/51068775" target="_blank" class="ls">侵权举报·</a>
+            <a href="http://www.12377.cn/" target="_blank" class="ls">网上有害信息举报专区</a><br>
+            <a href="https://tsm.miit.gov.cn/dxxzsp/" target="_blank" class="ls">京 ICP 证 110745 号·</a><br>
+            <a href="http://www.beian.miit.gov.cn" target="_blank" class="ls">京 ICP 备 13052560 号 — 1·</a><br>
+            <a href="http://www.beian.miit.gov.cnhttp://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020088"
+                target="_blank" class="ls"><img src="../static/img/an.png">京公网安备 11010802010035 号·</a><br>
+            互联网药品信息服务资格证书<br>
+            （京） — 给经营性 — 2017 — 0067 <br>
+            违法和不良信息举报： 010-82716601<br>
+            <a href="https://www.zhihu.com/jubao" target="_blank" class="ls">儿童色情信息举报专区</a>
+            <a href="https://www.zhihu.com/certificates" target="_blank" class="ls">证件中心</a><br>
+            <a href="https://www.zhihu.com/contact" target="_blank" class="ls">联系我们</a> &copy; 2020 知乎
+        </div>
+    </div>
+</body>
+
+</html>
